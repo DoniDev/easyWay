@@ -34,6 +34,7 @@ def detail(request, slug=None):
 
     context = {
         'post': post,
+        'section': 'blog_detail',
     }
 
     return render(request, 'blog/detail.html', context=context)
