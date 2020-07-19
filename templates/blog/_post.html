@@ -27,16 +27,15 @@
         {% endfor %}
     </div>
 
-    {% if section == 'blog_detail' and perms.blog.delete_post %}
+    {% if section == 'blog_detail' and request.user == post.author %}
 
         <a class="post-delete button warning" href="{% url 'blog:delete' post.pk %}" >Delete</a>
 
     {% endif %}
 
-    {% if section == 'blog_detail' and perms.blog.change_post %}
+    {% if section == 'blog_detail' and request.user == post.author %}
 
         <a class="post-edit button" href="{% url 'blog:edit' post.pk %}" >Edit</a>
-
     {% endif %}
 
 </div>
