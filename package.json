@@ -1,0 +1,18 @@
+{
+  "name": "blogger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w static/css/base.scss -o static/css --output-style compressed",
+    "sync": "browser-sync start --proxy \"localhost:8000\" --files \"static/css/base.css\" \"templates/*/*.html\" --no-notify --no-open --reload-delay 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.10",
+    "node-sass": "^4.14.1"
+  }
+}

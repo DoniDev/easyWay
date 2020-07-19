@@ -1,0 +1,42 @@
+<div class="post">
+    {% if section == 'blog_detail' %}
+        <h1 class="post-title">{{ post }}</h1>
+    {% else %}
+        <a href="{{ post.get_absolute_url }}">
+            <h2 class="post-title">{{ post }}</h2>
+        </a>
+    {% endif %}
+    <div class="post-meta">
+        <i class="post-date-icon far fa-calendar-alt post-date-icon"></i>
+        <span class="post-date-value">Posted {{ post.created|date:"M j, Y" }}</span> |
+        <span class="post-author"> {{ post.author }}</span>
+    </div>
+    {% if post.image %}
+        <img class="post-image" src="{{ post.image_thumbnail.url }}">
+    {% endif %}
+    <div class="post-body">
+        {% if section == 'blog_detail' %}
+            {{ post.body|linebreaks }}
+        {% else %}
+            {{ post.body|truncatechars:300|linebreaks }}
+        {% endif %}
+    </div>
+    <div class="post-tags">
+        {% for tag in post.tags.all %}
+            <a class="post-tags-tag" href="{% url 'blog:posts_by_tag' tag.slug %}" >{{ tag }}</a>
+        {% endfor %}
+    </div>
+
+    {% if section == 'blog_detail' and perms.blog.delete_post %}
+
+        <a class="post-delete button warning" href="{% url 'blog:delete' post.pk %}" >Delete</a>
+
+    {% endif %}
+
+    {% if section == 'blog_detail' and perms.blog.change_post %}
+
+        <a class="post-edit button" href="{% url 'blog:edit' post.pk %}" >Edit</a>
+
+    {% endif %}
+
+</div>

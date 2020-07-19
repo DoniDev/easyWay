@@ -1,0 +1,36 @@
+{% if posts.paginator.num_pages > 1 %}
+
+    <div class="pagination-wrapper">
+
+        <div class="pagination">
+
+            {% if posts.has_previous %}
+                <a class="pagination-action" href="?page=1">
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                </a>
+                <a class="pagination-action"
+                   href="?page={{ posts.previous_page_number }}">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+            {% endif %}
+
+            <span class="pagination-current">{{ posts.number }}</span>
+            <span class="pagination-of">of</span>
+            <span class="pagination-total">{{ posts.paginator.num_pages }}</span>
+
+            {% if posts.has_next %}
+                <a class="pagination-action"
+                   href="?page={{ posts.next_page_number }}">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+                <a class="pagination-action"
+                   href="?page={{ posts.paginator.num_pages }}">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                </a>
+            {% endif %}
+
+        </div> <!-- pagination -->
+
+    </div> <!-- pagination-wrapper -->
+
+{% endif %}

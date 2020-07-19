@@ -1,0 +1,22 @@
+.post-list {
+  background-color: #fff;
+  padding: 1em;
+  &-heading {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  &-link {
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+  }
+  &-date {
+    color: #3B3B3B;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+  }
+
+  .odd {
+    background-color: #F5F5F5;
+  }
+}

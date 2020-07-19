@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+local_settings.py
+db.sqlite3
+staticfiles
+media
+node_modules
+.idea
+*~
+\#*\#
+.\#*

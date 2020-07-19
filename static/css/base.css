@@ -1,0 +1,424 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+img {
+    border-style: none
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 50px;
+    background-color: #f8f8f8
+}
+
+html {
+    overflow-y: scroll
+}
+
+a {
+    color: #000
+}
+
+p {
+    line-height: 1.5em
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 0
+}
+
+.tags-title {
+    margin: 1.5em;
+    font-size: 1.3em
+}
+
+.button, button[type="submit"], input[type="submit"] {
+    background-color: #558FE7;
+    border-color: #558FE7;
+    border-radius: 1px;
+    padding: 0.8em 1.5em;
+    color: #fff;
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+    text-decoration: none;
+    width: auto
+}
+
+.warning {
+    background-color: #E75555
+}
+
+.header-top {
+    height: 50px;
+    background-color: #004976;
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 50px
+}
+
+.header-brand {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1em;
+    letter-spacing: 1px
+}
+
+.header-menu {
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+    list-style: none
+}
+
+.header-menu-li {
+    display: inline-block
+}
+
+.header-menu-a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    padding: 0 1em
+}
+
+.header-menu-a-active {
+    padding: 0 3em;
+    background-color: #00304D
+}
+
+.header-account {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 3em;
+    background-color: #006CAF
+}
+
+.header-account-a {
+    color: #fff;
+    text-decoration: none
+}
+
+.header-bottom {
+    height: 200px;
+    background: url("../../static/images/header-bg.jpg") repeat-x;
+    text-align: center
+}
+
+.header-bottom-content {
+    height: 200px;
+    width: 800px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+    line-height: 200px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+
+.main {
+    margin: 0 auto;
+    width: 1000px;
+    padding-top: 1em
+}
+
+.content {
+    width: 70%;
+    float: left;
+    background-color: #fff;
+    padding: 2em
+}
+
+.sidebar {
+    width: 30%;
+    float: left;
+    padding: 0 1em 1em 1em
+}
+
+.sidebar-ad {
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #F0F0F0;
+    height: 150px;
+    line-height: 150px;
+    color: #A8A8A8;
+    text-transform: uppercase
+}
+
+.blog-delete-item {
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 0.5em 0
+}
+
+.post {
+    margin-bottom: 2em
+}
+
+.post-meta {
+    color: #333;
+    font-size: 0.9em;
+    margin-bottom: 1.5em
+}
+
+.post-date-icon {
+    opacity: 0.6;
+    margin-right: 0.5em
+}
+
+.post-image {
+    border-radius: 3px;
+    width: 100%
+}
+
+.post-body {
+    line-height: 1.5em;
+    font-size: 1.1em
+}
+
+.post-tags {
+    margin-bottom: 1em
+}
+
+.post-tags-tag {
+    display: inline-block;
+    background-color: #f8f8f8;
+    padding: 0.8em 1em;
+    color: #4A4A4A;
+    text-decoration: none
+}
+
+.post-list {
+    background-color: #fff;
+    padding: 1em
+}
+
+.post-list-heading {
+    font-size: 20px;
+    margin-top: 0
+}
+
+.post-list-link {
+    padding: 1em;
+    display: block;
+    text-decoration: none
+}
+
+.post-list-date {
+    color: #3B3B3B;
+    margin-bottom: 0.5em;
+    font-size: 0.9em
+}
+
+.post-list .odd {
+    background-color: #F5F5F5
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #ccc
+}
+
+.pagination {
+    text-align: center;
+    margin: 2em 0
+}
+
+.pagination-current, .pagination-total {
+    padding: 0.5em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #6DA8E3
+}
+
+.pagination-total {
+    background-color: #B9B9B9
+}
+
+.pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #B9B9B9;
+    font-size: 1.3em
+}
+
+.pagination-of {
+    color: #B9B9B9;
+    padding: 0 1em
+}
+
+.pagination-action:hover {
+    color: #3354AA
+}

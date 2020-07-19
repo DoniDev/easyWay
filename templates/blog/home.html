@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Blogging Platform
+{% endblock %}
+
+{% block content %}
+
+    {% if tag %}
+        <p>Posts tagged with <b>{{ tag.name }}</b></p>
+    {% endif %}
+    {% for post in posts %}
+
+        {% include 'blog/_post.html' %}
+
+    {% endfor %}
+
+    {% include 'blog/components/_pagination.html' with items=posts %}
+
+{% endblock %}

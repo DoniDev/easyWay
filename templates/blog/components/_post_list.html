@@ -1,0 +1,10 @@
+<div class="post-list">
+    <h2 class="post-list-heading">{{ heading }}</h2>
+    {% for post in latest_posts %}
+        <a href="{{ post.get_absolute_url }}" class="post-list-link" {% cycle 'odd' 'even' %}>
+            <div class="post-list-date">{{ post.created }}</div>
+            <div class="post-list-title">{{ post.title|truncatechars:20 }}</div>
+        </a>
+    {% endfor %}
+</div>
+    

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+
+{% block header %}
+   <h1>{{ post.title }}</h1>
+{% endblock %}
+
+{% block content %}
+
+    {% include 'blog/_post.html' with post=post %}
+
+{% endblock %}

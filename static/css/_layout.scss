@@ -1,0 +1,28 @@
+.main {
+  margin: 0 auto;
+  width: 1000px;
+  padding-top: 1em;
+}
+
+.content {
+  width: 70%;
+  float: left;
+  background-color: #fff;
+  padding: 2em;
+}
+
+.sidebar {
+  width: 30%;
+  float: left;
+  padding: 0 1em 1em 1em;
+
+  &-ad {
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #F0F0F0;
+    height: 150px;
+    line-height: 150px;
+    color: #A8A8A8;
+    text-transform: uppercase;
+  }
+}

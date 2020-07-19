@@ -1,0 +1,42 @@
+.blog {
+  &-delete {
+    &-item {
+      display: inline-block;
+      font-size: 1.1em;
+      margin: 0.5em 0;
+    }
+  }
+}
+
+.post {
+  margin-bottom: 2em;
+  &-meta {
+    color: #333;
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+  }
+  &-date {
+    &-icon {
+      opacity: 0.6;
+      margin-right: 0.5em;
+    }
+  }
+  &-image {
+    border-radius: 3px;
+    width: 100%;
+  }
+  &-body {
+    line-height: 1.5em;
+    font-size: 1.1em;
+  }
+  &-tags {
+    margin-bottom: 1em;
+    &-tag {
+      display: inline-block;
+      background-color: #f8f8f8;
+      padding: 0.8em 1em;
+      color: #4A4A4A;
+      text-decoration: none;
+    }
+  }
+}
