@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 from taggit.managers import TaggableManager
 from imagekit.models import ImageSpecField
 from pilkit.processors import ResizeToFill
-from   ckeditor.fields import RichTextField
 
 
 class Post(models.Model):
@@ -20,6 +19,8 @@ class Post(models.Model):
     image = models.ImageField(upload_to='images', default='', blank=True)
     image_thumbnail = ImageSpecField(source='image', processors=[ResizeToFill(700, 700  )],
                                      format='JPEG', options={'quality': 60})
+    # here
+    test_field = models.TextField(default='', blank=True)
 
 
 
