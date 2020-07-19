@@ -19,8 +19,6 @@ class Post(models.Model):
     image = models.ImageField(upload_to='images', default='', blank=True)
     image_thumbnail = ImageSpecField(source='image', processors=[ResizeToFill(700, 700  )],
                                      format='JPEG', options={'quality': 60})
-    # here
-    test_field = models.TextField(default='', blank=True)
 
 
 
