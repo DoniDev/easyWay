@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',  # new
     'django.contrib.staticfiles',
 
 ]
@@ -134,7 +135,7 @@ LOGIN_REDIRECT_URL = 'blog:home'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # new
 ENV = os.environ.get('ENV')
 
 if ENV == 'production':
